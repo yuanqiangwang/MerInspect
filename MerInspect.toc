@@ -1,4 +1,4 @@
-## Interface: 20504
+## Interface: 30400
 ## Title: MerInspect
 ## Version: 1.0.3
 ## Notes: Inspect Assiest
