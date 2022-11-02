@@ -1,3 +1,4 @@
-# MerInspect
+# MerInspect（观察助手）
 
-仅适配wlk
+
+Fix WotLK
