@@ -195,6 +195,8 @@ function ShowInspectItemListFrame(unit, parent, ilevel, maxLevel)
         LibEvent:trigger("INSPECT_ITEMFRAME_UPDATED", itemframe)
     end
     frame:SetWidth(width + 36)
+    GearManagerDialog:SetFrameLevel(9) --nga:提高装备管理弹窗弹窗层级.
+    --frame:SetFrameLevel(0)
     frame:Show()
 
     LibEvent:trigger("INSPECT_FRAME_SHOWN", frame, parent, ilevel)
