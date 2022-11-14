@@ -18,8 +18,6 @@ local function GetInspectTalentInfo(unit, isInspect, talentGroup)
     name2, _, point2, fileName2 = GetTalentTabInfo(2, isInspect, false, talentGroup)
     name3, _, point3, fileName3 = GetTalentTabInfo(3, isInspect, false, talentGroup)
 
-    -- local id,name,description,iconTexture,pointsSpent,background,previewPointsSpent,isUnlocked=GetTalentTabInfo(1, isInspect,false,talentGroup)
-
     point = max(point1, point2, point3)
 
     if point == point1 then
@@ -68,7 +66,7 @@ hooksecurefunc("ShowInspectItemListFrame", function(unit, parent, itemLevel, max
     -- 副天赋
     local subTalentGroup
 
-    -- 当前1，则2；当前2，则1
+    -- 当前1，则2；当前2，则1（ 1 for primary, 2 for secondary）
     if talentGroup == 1 then
         subTalentGroup = 2
     elseif talentGroup == 2 then
